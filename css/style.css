@@ -1,0 +1,375 @@
+
+:root {
+    --color1: #5C1302;
+    --color2: #B3B359;
+    --color3: #FAAC57;
+    --color4: #161B1F;
+    --color5: #963C08;
+}
+
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background: var(--color4);
+}
+
+h1, h2, h3, h4, a, p, ul, li {
+    text-decoration: none;
+    color: var(--color4);
+}
+
+nav {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 80px;
+    background: var(--color1);
+}
+
+h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+h3::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 3px;
+    background: var(--color5);
+    margin: 8px auto 20px auto;
+}
+
+.navegacao {
+    margin-top: 20px;
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+}
+
+.navegacao a {
+    color: var(--color2);
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+
+.logo {
+    padding: 10px;
+}
+
+.logo img {
+    margin-left: 100px;
+    color: var(--color2);
+}
+
+.nav-bar {
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav-bar a {
+    
+    text-transform: uppercase;
+    color: var(--color2);;
+}
+
+.banner-destaque {
+    display: grid;
+    grid-template-rows: 362px;
+    grid-column: 1fr;
+    background: url(./img/bg-main.png) no-repeat center;
+}
+
+.btn {
+    background: none;
+    color: var(--color3);
+    margin: 240px 240px;
+    width: 150px;
+    height: 40px;
+    border: 2px solid var(--color3);
+    border-radius: 4px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.unidades {
+    display: grid;
+    grid-template: 
+    "... titulo ..."
+    "... unidade-bsb ..."
+    "cidades cidades cidades"
+    "... unidade-go ..."
+    /1fr 1fr 1fr;
+}
+
+.unidades {
+    grid-area: titulo;
+    margin: 20px 200px;
+}
+
+.unidade-bsb {
+    grid-area: unidade-bsb;
+}
+
+.unidade-bsb-cidades {
+    display: grid;
+    grid-area: cidades;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto auto 40px;
+}
+
+.unidade-bsb-cidades div h4 {
+    margin-bottom: 20px;
+    color: var(--color3);
+    text-transform: uppercase;
+}
+
+.unidade-bsb-cidades p {
+    color: var(--color2);
+    margin-right: 30px;
+}
+
+.unidade-go {
+    grid-area: unidade-go;
+}
+
+.unidades h2{
+    color: var(--color3);
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+.unidades h3 {
+    color: var(--color3);
+}
+
+.unidades p {
+    color: var(--color2);
+}
+
+
+.unidade-bsb-cidades img {
+    max-width: 280px;
+}
+
+.unidade-go img {
+    max-width: 560px;
+}
+
+.unidade-go button {
+    margin-left: 230px;
+}
+
+.btn-chegar {
+    margin: 10px 80px;
+    background: none;
+    color: var(--color2);
+    border: 2px solid var(--color3);
+    border-radius: 5px;
+    padding: 7px;
+    cursor: pointer;
+
+    text-transform: uppercase;
+}
+
+
+.sobre {
+    display: grid;
+    grid-template: 
+    "titulo titulo"
+    "equipe historia"
+    / 1fr 1fr;
+
+    background: var(--color1);
+}
+
+.sobre h2 {
+   color: var(--color3);
+}
+
+.sobre h3 {
+    color: var(--color3);
+    font-weight: bold;
+}
+
+.sobre p {
+    color: var(--color2);
+}
+
+.titulo {
+    grid-area: titulo;
+    margin: 20px auto;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+
+.equipe {
+    grid-area: equipe;
+    text-align: center;
+}
+
+.historia {
+    grid-area: historia;
+    margin-bottom: 100px;
+}
+
+.historia p {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.cardapio {
+    display: grid;
+    grid-template: 
+    "titulo titulo titulo"
+    " burguer1 descricao1  ..."
+    " ... descricao2 burguer2"
+    "burguer3 descricao3 ... "
+    "btn-pedido btn-pedido btn-pedido"
+    / 1fr 1fr 1fr;
+    text-align: center;
+
+    background: var(--color4);
+    color: var(--color3);
+}
+
+.titulo {
+    grid-area: titulo;
+}
+
+.burguer1 {
+    grid-area: burguer1;
+}
+
+.burguer2 {
+    grid-area: burguer2;
+}
+
+.burguer3 {
+    grid-area: burguer3;
+}
+
+.description {
+    grid-area: descricao1;
+}
+
+.description2 {
+    grid-area: descricao2;
+
+}
+
+.description3 {
+    grid-area: descricao3;
+}
+
+.cardapio h2, img {
+    color: var(--color3);
+}
+
+.cardapio h3 {
+    color: var(--color2)F;
+}
+
+.cardapio h3::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 3px;
+    background: #8E5E23;
+    margin: 8px auto 20px auto;
+}
+
+
+.cardapio img {
+    max-width: 280px;
+    border-radius: 10px;
+}
+
+.cardapio img:hover {
+    animation: bounce .4s;
+}
+
+@keyframes bounce {
+    10%, 40% {
+        transform: translateY(-10px);
+    }
+}
+
+.subtitulo{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.cardapio p {
+    width: 300px;
+    margin-left: 70px;
+    color: var(--color2)F;
+}
+
+.pedidos{
+    background: none;
+    padding: 10px;
+    border: 1px solid var(--color4);
+}
+
+.pedidos {
+    grid-area: btn-pedido;
+}
+
+.btn-pedido {
+    color: var(--color2);
+    margin: 20px auto;
+    background: none;
+    border: 2px solid var(--color2);
+    padding: 10px;
+    width: 300px;
+}
+
+.btn-pedido a {
+    color: var(--color2);
+}
+
+.btn-info, .btn-info2, .btn-info3 {
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    padding: 10px;
+    width: 400px;
+    height: 300px;
+    border: 2px solid var(--color2);
+    margin-top: 70px;
+}
+
+.footer {   
+    display: grid;
+    grid-template-columns: 5fr 0.5fr;
+    background: var(--color1)  ;
+}
+
+.footer p {
+    color: var(--color3);
+}
+
+.copy {
+    text-align: center;
+}
+
+
+.js-scroll {
+    opacity: 0;
+    transition: .3s;
+    transform: translate3d(-30px, 0, 0);
+}
+
+.js-scroll.ativo{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
